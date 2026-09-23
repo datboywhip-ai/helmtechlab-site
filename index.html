@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Helm Tech Lab — AI Engineered for Real Business</title>
+<meta name="description" content="Helm Tech Lab builds AI software for real businesses. Proven infrastructure, real products, real results.">
+<style>
+  :root {
+    --bg: #0A0A0F;
+    --bg-alt: #12121a;
+    --cyan: #00D4FF;
+    --purple: #8B00FF;
+    --text: #E8E8F0;
+    --text-dim: #8888a0;
+    --border: #2a2a38;
+  }
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body {
+    background: var(--bg);
+    color: var(--text);
+    font-family: 'Segoe UI', system-ui, -apple-system, sans-serif;
+    line-height: 1.6;
+  }
+  .glow-text {
+    background: linear-gradient(90deg, var(--cyan), var(--purple));
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+  }
+  header {
+    padding: 24px 5%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid var(--border);
+    position: sticky;
+    top: 0;
+    background: rgba(10,10,15,0.92);
+    backdrop-filter: blur(10px);
+    z-index: 100;
+  }
+  .logo { font-weight: 700; font-size: 1.3rem; letter-spacing: 0.5px; }
+  nav a {
+    color: var(--text-dim);
+    text-decoration: none;
+    margin-left: 32px;
+    font-size: 0.95rem;
+    transition: color 0.2s;
+  }
+  nav a:hover { color: var(--cyan); }
+  .hero {
+    padding: 120px 5% 100px;
+    text-align: center;
+    max-width: 900px;
+    margin: 0 auto;
+  }
+  .hero h1 {
+    font-size: clamp(2.2rem, 5vw, 3.8rem);
+    font-weight: 800;
+    margin-bottom: 20px;
+    letter-spacing: -1px;
+  }
+  .hero p {
+    font-size: 1.2rem;
+    color: var(--text-dim);
+    max-width: 640px;
+    margin: 0 auto 40px;
+  }
+  .btn {
+    display: inline-block;
+    padding: 14px 32px;
+    border-radius: 8px;
+    font-weight: 600;
+    text-decoration: none;
+    transition: transform 0.2s, box-shadow 0.2s;
+    font-size: 1rem;
+  }
+  .btn-primary {
+    background: linear-gradient(90deg, var(--cyan), var(--purple));
+    color: #0A0A0F;
+    margin-right: 16px;
+  }
+  .btn-secondary {
+    border: 1px solid var(--border);
+    color: var(--text);
+  }
+  .btn:hover { transform: translateY(-2px); box-shadow: 0 8px 24px rgba(0,212,255,0.15); }
+  section { padding: 90px 5%; max-width: 1100px; margin: 0 auto; }
+  .section-label {
+    color: var(--cyan);
+    text-transform: uppercase;
+    font-size: 0.85rem;
+    letter-spacing: 2px;
+    font-weight: 600;
+    margin-bottom: 12px;
+  }
+  .section-title { font-size: 2.2rem; font-weight: 800; margin-bottom: 16px; }
+  .section-intro { color: var(--text-dim); max-width: 620px; margin-bottom: 56px; font-size: 1.05rem; }
+  .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 24px; }
+  .card {
+    background: var(--bg-alt);
+    border: 1px solid var(--border);
+    border-radius: 12px;
+    padding: 32px;
+    transition: border-color 0.2s, transform 0.2s;
+  }
+  .card:hover { border-color: var(--cyan); transform: translateY(-4px); }
+  .card-tag {
+    display: inline-block;
+    font-size: 0.75rem;
+    font-weight: 700;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    padding: 4px 10px;
+    border-radius: 4px;
+    margin-bottom: 16px;
+  }
+  .tag-free { background: rgba(0,212,255,0.12); color: var(--cyan); }
+  .tag-live { background: rgba(139,0,255,0.12); color: var(--purple); }
+  .card h3 { font-size: 1.3rem; margin-bottom: 10px; }
+  .card p { color: var(--text-dim); font-size: 0.95rem; margin-bottom: 20px; }
+  .card-links a {
+    color: var(--cyan);
+    text-decoration: none;
+    font-size: 0.9rem;
+    font-weight: 600;
+    margin-right: 20px;
+  }
+  .card-links a:hover { text-decoration: underline; }
+  .services-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 32px; }
+  .service-item h4 { font-size: 1.1rem; margin-bottom: 10px; color: var(--cyan); }
+  .service-item p { color: var(--text-dim); font-size: 0.95rem; }
+  .cta-section {
+    text-align: center;
+    background: var(--bg-alt);
+    border-radius: 16px;
+    padding: 70px 5%;
+    margin: 0 5% 90px;
+  }
+  .cta-section h2 { font-size: 2rem; margin-bottom: 16px; }
+  .cta-section p { color: var(--text-dim); margin-bottom: 32px; }
+  footer {
+    text-align: center;
+    padding: 40px 5%;
+    color: var(--text-dim);
+    font-size: 0.9rem;
+    border-top: 1px solid var(--border);
+  }
+</style>
+</head>
+<body>
+
+<header>
+  <div class="logo">HELM TECH <span class="glow-text">LAB</span></div>
+  <nav>
+    <a href="#portfolio">Portfolio</a>
+    <a href="#services">Services</a>
+    <a href="#contact">Contact</a>
+  </nav>
+</header>
+
+<section class="hero">
+  <h1>AI Engineered for <span class="glow-text">Real Business</span></h1>
+  <p>We build AI software that actually ships. Every product below is live, working, and running today — proof before pitch.</p>
+  <a href="#portfolio" class="btn btn-primary">See the Work</a>
+  <a href="#contact" class="btn btn-secondary">Get in Touch</a>
+</section>
+
+<section id="portfolio">
+  <div class="section-label">Portfolio</div>
+  <h2 class="section-title">Live Infrastructure, Not Mockups</h2>
+  <p class="section-intro">These are real, running products — free and open where it makes sense, built to show exactly what we can build for you.</p>
+  <div class="grid">
+    <div class="card">
+      <span class="card-tag tag-free">Free &amp; Open</span>
+      <h3>DataForge</h3>
+      <p>AI dataset crawler and training data acquisition platform. Crawls, structures, and exports real training data at scale.</p>
+      <div class="card-links">
+        <a href="https://forge4ai.com" target="_blank">Live Demo →</a>
+        <a href="https://github.com/datboywhip-ai/DATAFORGE" target="_blank">GitHub →</a>
+      </div>
+    </div>
+    <div class="card">
+      <span class="card-tag tag-live">Live Product</span>
+      <h3>Songstab</h3>
+      <p>AI music platform with a full plugin suite — mastering, mixing, and hardware-modeled effects built by a working producer.</p>
+      <div class="card-links">
+        <a href="https://songstab.com" target="_blank">Visit Site →</a>
+      </div>
+    </div>
+    <div class="card">
+      <span class="card-tag tag-live">Live Product</span>
+      <h3>DieselOps / DieselMind</h3>
+      <p>AI diesel diagnostics built on 23 years of real technician knowledge. The engine behind it: DieselMind.</p>
+      <div class="card-links">
+        <a href="https://dieselops.app" target="_blank">Visit Site →</a>
+      </div>
+    </div>
+    <div class="card">
+      <span class="card-tag tag-free">Free &amp; Open</span>
+      <h3>DieselOps Service Finder</h3>
+      <p>Find diesel repair shops, mobile mechanics, towing, and tire service by location — free for techs, drivers, and fleets, no account required.</p>
+      <div class="card-links">
+        <a href="https://finder.dieselops.app" target="_blank">Live Demo →</a>
+        <a href="https://github.com/datboywhip-ai/dieselops-service-finder" target="_blank">GitHub →</a>
+      </div>
+    </div>
+    <div class="card">
+      <span class="card-tag tag-live">Live Product</span>
+      <h3>LoadLogic</h3>
+      <p>Fleet dispatch operating system, built AI-first from the ground up for real dispatch workflows.</p>
+      <div class="card-links">
+        <a href="https://loadlogicusa.com" target="_blank">Visit Site →</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="services">
+  <div class="section-label">Services</div>
+  <h2 class="section-title">What We Build</h2>
+  <p class="section-intro">Helm Tech Lab designs and ships AI software for companies that need real tools, not demos.</p>
+  <div class="services-grid">
+    <div class="service-item">
+      <h4>Custom AI Applications</h4>
+      <p>End-to-end product builds — from architecture to deployment — using the same infrastructure powering our own live products.</p>
+    </div>
+    <div class="service-item">
+      <h4>AI Agent &amp; Automation Systems</h4>
+      <p>Autonomous agents that actually run operations, not chatbots bolted onto a website.</p>
+    </div>
+    <div class="service-item">
+      <h4>Domain-Specific Model Fine-Tuning</h4>
+      <p>Small, fast, open-weight models trained on your real data — built to outperform general models on your specific domain.</p>
+    </div>
+    <div class="service-item">
+      <h4>Infrastructure &amp; Deployment</h4>
+      <p>Cloud-native architecture on GCP/Cloud Run, built to scale from prototype to production without a rewrite.</p>
+    </div>
+  </div>
+</section>
+
+<div class="cta-section" id="contact">
+  <h2>Have something to build?</h2>
+  <p>Tell us what you're trying to solve — we'll tell you if AI is actually the right answer.</p>
+  <a href="mailto:hello@helmtechlab.com" class="btn btn-primary">hello@helmtechlab.com</a>
+</div>
+
+<footer>
+  &copy; 2026 Helm Tech Lab. Built with the same tools we sell.
+</footer>
+
+</body>
+</html>
