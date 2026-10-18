@@ -8,7 +8,7 @@ import assert from 'node:assert/strict';
 const dir = mkdtempSync(join(tmpdir(), 'contact-'));
 const file = join(dir, 'contact.mjs');
 writeFileSync(file, readFileSync(new URL('../functions/api/contact.js', import.meta.url), 'utf8'));
-const { onRequestPost, onRequest } = await import(file);
+const { onRequestPost, onRequest, webhookPayload } = await import(file);
 
 const URL_ = 'https://helmtechlab.com/api/contact';
 const good = { name: 'Dana', email: 'dana@example.com', message: 'We need dispatch automation for 40 trucks.' };
@@ -73,5 +73,17 @@ await t('forwards to webhook; 502 when every target fails', async () => {
 });
 await t('non-POST methods get 405', async () => {
   const res = await onRequest(); assert.equal(res.status, 405); assert.equal(res.headers.get('allow'), 'POST');
+});
+await t('webhook payloads: slack, discord, generic; mentions neutralised', async () => {
+  const lead = { id: '1', at: 'now', name: 'Dana <!channel>', email: 'd@x.com', message: '@everyone hi & bye', source: 'helmtechlab.com' };
+  const slack = webhookPayload('https://hooks.slack.com/services/T/B/x', lead);
+  assert.ok(slack.text.includes('&lt;!channel&gt;') && slack.text.includes('&amp;') && !slack.text.includes('<!channel>'));
+  const discord = webhookPayload('https://discord.com/api/webhooks/1/x', lead);
+  assert.deepEqual(discord.allowed_mentions, { parse: [] }); assert.ok(discord.content.includes('d@x.com'));
+  assert.equal(webhookPayload('https://hooks.example/x', lead), lead);
+});
+await t('only https webhooks are used', async () => {
+  const [s, b] = await call(req(good), { LEAD_WEBHOOK_URL: 'http://insecure.example/x' });
+  assert.equal(s, 503); assert.equal(b.error, 'not_configured');
 });
 console.log(`\n${n} passed`);

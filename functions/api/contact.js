@@ -1,7 +1,8 @@
 // Cloudflare Pages Function: POST /api/contact
 // Delivery targets (configure at least one in Pages > Settings > Bindings / Variables):
 //   LEADS             KV namespace binding   -> every lead is stored as lead:<time>:<id>
-//   LEAD_WEBHOOK_URL  environment secret     -> every lead is also POSTed there as JSON
+//   LEAD_WEBHOOK_URL  environment secret     -> https URL; every lead is also POSTed there
+//                                               (Slack/Discord webhooks get a readable alert, others raw JSON)
 // With neither configured the endpoint answers 503 and the page falls back to email.
 
 const LIMITS = { name: 120, email: 254, message: 4000 };
@@ -12,6 +13,22 @@ function json(body, status = 200, extra = {}) {
     status,
     headers: { 'content-type': 'application/json', 'cache-control': 'no-store', ...extra },
   });
+}
+
+// Shape the alert for the webhook target. Slack and Discord get a readable message
+// (with mentions neutralised so lead text can never ping a channel); anything else
+// receives the raw lead JSON.
+export function webhookPayload(url, lead) {
+  let host = '';
+  try { host = new URL(url).hostname; } catch { /* handled by caller */ }
+  const text = `New lead from helmtechlab.com\nName: ${lead.name}\nEmail: ${lead.email}\n\n${lead.message}`.slice(0, 1800);
+  if (host === 'hooks.slack.com') {
+    return { text: text.replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;') };
+  }
+  if (host === 'discord.com' || host.endsWith('.discord.com') || host === 'discordapp.com') {
+    return { content: text, allowed_mentions: { parse: [] } };
+  }
+  return lead;
 }
 
 function clean(value, max) {
@@ -50,7 +67,7 @@ export async function onRequestPost({ request, env }) {
   if (Object.keys(fields).length) return json({ ok: false, error: 'invalid', fields }, 422);
 
   const hasKv = env && env.LEADS && typeof env.LEADS.put === 'function';
-  const hasHook = env && typeof env.LEAD_WEBHOOK_URL === 'string' && env.LEAD_WEBHOOK_URL !== '';
+  const hasHook = env && typeof env.LEAD_WEBHOOK_URL === 'string' && env.LEAD_WEBHOOK_URL.startsWith('https://');
   if (!hasKv && !hasHook) return json({ ok: false, error: 'not_configured' }, 503);
 
   const at = new Date().toISOString();
@@ -66,7 +83,7 @@ export async function onRequestPost({ request, env }) {
       const res = await fetch(env.LEAD_WEBHOOK_URL, {
         method: 'POST',
         headers: { 'content-type': 'application/json' },
-        body: JSON.stringify(lead),
+        body: JSON.stringify(webhookPayload(env.LEAD_WEBHOOK_URL, lead)),
         signal: AbortSignal.timeout(5000),
       });
       if (res.ok) delivered = true;
