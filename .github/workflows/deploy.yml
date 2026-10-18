@@ -1,0 +1,39 @@
+name: Deploy to Cloudflare Pages
+
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+concurrency:
+  group: deploy
+  cancel-in-progress: false
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Test contact function
+        run: node tests/contact.test.mjs
+
+      - name: Deploy
+        uses: cloudflare/wrangler-action@v3
+        with:
+          apiToken: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+          accountId: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
+          command: pages deploy . --project-name=helmtechlab-site --branch=main
+
+      - name: Smoke test live site
+        run: |
+          code=000
+          for i in 1 2 3 4 5 6; do
+            code=$(curl -s -o /dev/null -w '%{http_code}' -X POST https://helmtechlab.com/api/contact \
+              -H 'content-type: application/json' -d '{"name":"","email":"x","message":"y"}')
+            [ "$code" = "422" ] && { echo "contact endpoint OK (422)"; exit 0; }
+            sleep 10
+          done
+          echo "contact endpoint returned $code after deploy"; exit 1
