@@ -1,0 +1,11 @@
+[
+  {"name": "OpenAI", "url": "https://openai.com/news/rss.xml"},
+  {"name": "Google DeepMind", "url": "https://deepmind.google/blog/rss.xml"},
+  {"name": "Google AI", "url": "https://blog.google/technology/ai/rss/"},
+  {"name": "Hugging Face", "url": "https://huggingface.co/blog/feed.xml"},
+  {"name": "NVIDIA", "url": "https://blogs.nvidia.com/feed/"},
+  {"name": "MIT Technology Review", "url": "https://www.technologyreview.com/topic/artificial-intelligence/feed"},
+  {"name": "The Verge", "url": "https://www.theverge.com/rss/ai-artificial-intelligence/index.xml"},
+  {"name": "TechCrunch", "url": "https://techcrunch.com/category/artificial-intelligence/feed/"},
+  {"name": "Ars Technica", "url": "https://arstechnica.com/ai/feed/"}
+]
