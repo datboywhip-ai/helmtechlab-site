@@ -1,7 +1,7 @@
 // Builds the AI news section: fetch feeds -> pick recent stories -> short summaries -> news.json + index.html.
 // Run: node scripts/news/build-news.mjs   (Node 20+). Optional env: GEMINI_API_KEY, GEMINI_MODEL.
 import { readFileSync, writeFileSync } from 'node:fs';
-import { parseFeed, select, renderNews, inject } from './lib.mjs';
+import { parseFeed, select, renderNews, inject, recentCount } from './lib.mjs';
 
 const root = new URL('../../', import.meta.url);
 const sources = JSON.parse(readFileSync(new URL('scripts/news/sources.json', root), 'utf8'));
@@ -15,7 +15,8 @@ async function fetchFeed(src) {
     });
     if (!r.ok) throw new Error(`HTTP ${r.status}`);
     const items = parseFeed(await r.text());
-    console.log(`  ${src.name}: ${items.length} items`);
+    const undated = items.filter((i) => !i.date).length;
+    console.log(`  ${src.name}: ${items.length} items, ${recentCount(items)} from the last 10 days${undated ? `, ${undated} without a usable date` : ''}`);
     return { source: src.name, items };
   } catch (e) {
     console.log(`  ${src.name}: skipped (${e.message})`);

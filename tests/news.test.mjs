@@ -43,6 +43,14 @@ t('select: recent only, dedupe across sources, per-source cap, newest first', ()
   assert.deepEqual(out.map((i) => i.title), ['Six', 'One', 'Two', 'Three']);
 });
 
+t('select: every source with recent news gets a slot before busy sources fill up', () => {
+  const mk = (src, k, d) => ({ title: `${src} ${k}`, url: `https://${src}/${k}`, date: `2026-10-${d}T00:00:00Z`, text: '' });
+  const busy = (src) => ({ source: src, items: [30, 30, 29, 29].map((d, k) => mk(src, k, d)) });
+  const out = select([busy('A'), busy('B'), busy('C'), { source: 'Slow', items: [mk('Slow', 0, 22)] }], { now: NOW, perSource: 2, max: 4 });
+  assert.ok(out.some((i) => i.source === 'Slow'), 'slow source kept');
+  assert.equal(new Set(out.map((i) => i.source)).size, 4);
+});
+
 t('render escapes everything and never shows feed snippets', () => {
   const html = renderNews([{ source: '<S>', title: '"x" <script>', url: 'https://e.com/?a=1&b=2', date: '2026-10-30T00:00:00Z', summary: 'Sum & more', text: 'SECRET FEED TEXT' }], '2026-10-31T00:00:00Z');
   assert.ok(html.includes('&lt;S&gt;') && html.includes('&quot;x&quot; &lt;script&gt;') && html.includes('a=1&amp;b=2'));

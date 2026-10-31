@@ -43,25 +43,35 @@ export function parseFeed(xml = '') {
 
 const norm = (s) => s.toLowerCase().replace(/[^a-z0-9]+/g, ' ').trim();
 
-/** Recent items, newest first, deduped, at most perSource from each source, total max. */
+/** Recent items, deduped. Every source with something recent gets its newest story first,
+ *  then remaining slots go to the newest stories overall (at most perSource per source). */
 export function select(perSourceItems, { now = Date.now(), days = 10, perSource = 2, max = 12 } = {}) {
   const cutoff = now - days * 86400000;
   const seen = new Set();
-  const picked = [];
-  for (const { source, items } of perSourceItems) {
+  const lists = perSourceItems.map(({ source, items }) => {
     const fresh = items
       .filter((i) => i.date && Date.parse(i.date) >= cutoff && Date.parse(i.date) <= now + 86400000)
       .sort((a, b) => Date.parse(b.date) - Date.parse(a.date));
-    let n = 0;
+    const unique = [];
     for (const i of fresh) {
       const keys = [norm(i.title), i.url.split('?')[0]];
       if (keys.some((k) => seen.has(k))) continue;
       keys.forEach((k) => seen.add(k));
-      picked.push({ ...i, source });
-      if (++n >= perSource) break;
+      unique.push({ ...i, source });
+      if (unique.length >= perSource) break;
     }
-  }
-  return picked.sort((a, b) => Date.parse(b.date) - Date.parse(a.date)).slice(0, max);
+    return unique;
+  });
+  const byDate = (a, b) => Date.parse(b.date) - Date.parse(a.date);
+  const firsts = lists.filter((l) => l.length).map((l) => l[0]).sort(byDate).slice(0, max);
+  const rest = lists.flatMap((l) => l.slice(1)).sort(byDate);
+  return [...firsts, ...rest].slice(0, max).sort(byDate);
+}
+
+/** Per-source counts of usable recent stories (for the build log). */
+export function recentCount(items, { now = Date.now(), days = 10 } = {}) {
+  const cutoff = now - days * 86400000;
+  return items.filter((i) => i.date && Date.parse(i.date) >= cutoff).length;
 }
 
 export const esc = (s = '') => String(s).replace(/[&<>"']/g, (c) => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[c]));
