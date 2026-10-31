@@ -1,0 +1,62 @@
+name: AI news refresh
+
+on:
+  schedule:
+    - cron: "15 13 * * 1,3,5"   # Mon, Wed, Fri ~8:15 AM Central
+  workflow_dispatch:
+
+concurrency:
+  group: deploy
+  cancel-in-progress: false
+
+jobs:
+  refresh:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+
+      - name: Test
+        run: node tests/news.test.mjs && node tests/contact.test.mjs
+
+      - name: Build news
+        env:
+          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+        run: node scripts/news/build-news.mjs
+
+      - name: Commit if changed
+        id: commit
+        run: |
+          if git diff --quiet -- index.html news.json; then
+            echo "changed=false" >> "$GITHUB_OUTPUT"; echo "No news changes"; exit 0
+          fi
+          git config user.name "helm-news-bot"
+          git config user.email "helm-news-bot@users.noreply.github.com"
+          git add index.html news.json
+          git commit -m "AI news refresh $(date -u +%Y-%m-%d)"
+          git push
+          echo "changed=true" >> "$GITHUB_OUTPUT"
+
+      # Pushes made with GITHUB_TOKEN don't trigger deploy.yml, so deploy here.
+      - name: Deploy
+        if: steps.commit.outputs.changed == 'true'
+        uses: cloudflare/wrangler-action@v3
+        with:
+          apiToken: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+          accountId: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
+          command: pages deploy . --project-name=helmtechlab-site --branch=main
+
+      - name: Verify live page
+        if: steps.commit.outputs.changed == 'true'
+        run: |
+          for i in 1 2 3 4 5 6; do
+            n=$(curl -s https://helmtechlab.com/ | grep -c 'class="news-card"' || true)
+            [ "$n" -gt 0 ] && { echo "live page shows $n news cards"; exit 0; }
+            sleep 10
+          done
+          echo "news cards not found on the live page"; exit 1
