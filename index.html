@@ -138,6 +138,11 @@
   }
   .tag-free { background: rgba(0,212,255,0.12); color: var(--cyan); }
   .tag-live { background: rgba(139,0,255,0.12); color: var(--purple); }
+  .tag-internal { background: rgba(232,232,240,0.08); color: var(--text); border: 1px solid var(--border); }
+  .card ul { color: var(--text-dim); font-size: 0.92rem; margin: -8px 0 4px 18px; }
+  .card li { margin-bottom: 4px; }
+  .inhouse-cta { margin-top: 28px; color: var(--text-dim); }
+  .inhouse-cta a { color: var(--cyan); text-decoration: none; font-weight: 600; }
   .card h3 { font-size: 1.3rem; margin-bottom: 10px; }
   .card p { color: var(--text-dim); font-size: 0.95rem; margin-bottom: 20px; }
   .card-links a {
@@ -217,6 +222,7 @@
   <div class="logo">HELM TECH <span class="glow-text">LAB</span></div>
   <nav>
     <a href="#portfolio">Portfolio</a>
+    <a href="#in-house">In-House</a>
     <a href="#services">Services</a>
     <a href="#ai-news">AI News</a>
     <a href="#contact">Contact</a>
@@ -278,6 +284,35 @@
       </div>
     </div>
   </div>
+</section>
+
+<section id="in-house">
+  <div class="section-label">Built In-House</div>
+  <h2 class="section-title">The Tools That Run the Lab</h2>
+  <p class="section-intro">Every product above is built, shipped and monitored with our own software. It's how a small team ships like a big one.</p>
+  <div class="grid">
+    <div class="card">
+      <span class="card-tag tag-internal">Internal · Command Center</span>
+      <h3>MrHelm</h3>
+      <p>Our operations command center: one place to see and run every product we operate.</p>
+      <ul>
+        <li><strong>KIT</strong>, our AI agent, writes and deploys code, watches each product's health and works through a task queue.</li>
+        <li>Risky actions wait for a human yes. Nothing irreversible runs on its own.</li>
+        <li><strong>CORTEX</strong> gives every product one shared memory, so decisions and fixes are never lost.</li>
+      </ul>
+    </div>
+    <div class="card">
+      <span class="card-tag tag-internal">Internal · AI Workspace</span>
+      <h3>HELM-LLM</h3>
+      <p>Our own AI workspace, running open models on our own hardware or in our cloud.</p>
+      <ul>
+        <li>Powers <strong>Kit-Helm</strong>, a small tool-calling model we fine-tune in-house.</li>
+        <li>Works offline on a laptop or as a secure cloud app.</li>
+        <li>Connects to MrHelm, so work started on the desktop shows up in the command center.</li>
+      </ul>
+    </div>
+  </div>
+  <p class="inhouse-cta">Want an agent, a command center or a private AI workspace like these for your own business? <a href="#contact">That's what we build →</a></p>
 </section>
 
 <section id="services">
