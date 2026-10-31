@@ -1,1 +1,89 @@
-{"updated": null, "items": []}
+{
+  "updated": "2026-10-31T21:30:35.525Z",
+  "items": [
+    {
+      "title": "Judge allows NAACP lawsuit over xAI data center pollution to move forward",
+      "url": "https://techcrunch.com/2026/10/31/judge-allows-naacp-lawsuit-over-xai-data-center-pollution-to-move-forward/",
+      "date": "2026-10-31T21:17:03.000Z",
+      "source": "TechCrunch",
+      "summary": "A judge allowed an NAACP lawsuit accusing xAI of violating the Clean Air Act to proceed, signaling increasing legal scrutiny on environmental compliance for AI data centers."
+    },
+    {
+      "title": "OpenAI reportedly lowers funding target for new round",
+      "url": "https://techcrunch.com/2026/10/31/openai-reportedly-lowers-funding-target-for-new-round/",
+      "date": "2026-10-31T16:12:55.000Z",
+      "source": "TechCrunch",
+      "summary": "OpenAI reportedly reduced the funding target for its latest capital round, indicating shifting investor expectations around massive generative AI valuations."
+    },
+    {
+      "title": "I built an AI Tamagotchi before Meta could",
+      "url": "https://www.theverge.com/gadgets/1013375/muse-charm-gadgets-preview-waveshare-esp32-claude-vibe-code",
+      "date": "2026-10-31T16:05:00.000Z",
+      "source": "The Verge",
+      "summary": "An independent builder created a personal AI companion device ahead of Meta's Muse Charm release, highlighting growing interest in dedicated consumer AI hardware."
+    },
+    {
+      "title": "Apple Intelligence is finally coming to China with iOS 27.3",
+      "url": "https://www.theverge.com/tech/1023974/apple-intelligence-china-ios-27-3",
+      "date": "2026-10-30T22:32:53.000Z",
+      "source": "The Verge",
+      "summary": "Apple announced that Apple Intelligence features will launch in China with upcoming iOS software updates, expanding the company's AI ecosystem to a major global market."
+    },
+    {
+      "title": "Supersonic airliner in doubt as company shifts to powering AI data centers",
+      "url": "https://arstechnica.com/gadgets/2026/10/united-airlines-ceo-doubts-supersonic-airliner-from-boom-will-be-ready-by-2029/",
+      "date": "2026-10-30T21:41:54.000Z",
+      "source": "Ars Technica",
+      "summary": "Boom is pivoting toward powering AI data centers amid supersonic jet delays, reflecting how rising infrastructure energy demands are altering company business models."
+    },
+    {
+      "title": "Anthropic VS code extension on Cursor backdoored for nearly 12 hours",
+      "url": "https://arstechnica.com/security/2026/10/anthropic-vs-code-extension-on-cursor-backdoored-for-nearly-12-hours/",
+      "date": "2026-10-30T21:09:54.000Z",
+      "source": "Ars Technica",
+      "summary": "Attackers compromised Anthropic's verified VS Code extension on Cursor for nearly 12 hours, exposing critical supply chain security risks in popular AI development tooling."
+    },
+    {
+      "title": "nemotron-halloween",
+      "url": "https://huggingface.co/blog/nvidia/nemotron-halloween",
+      "date": "2026-10-30T17:57:24.000Z",
+      "source": "Hugging Face",
+      "summary": "Hugging Face listed a new Halloween-themed Nemotron project, providing builders with an updated community release based on the Nemotron model architecture."
+    },
+    {
+      "title": "Things That Go Beep in the Night: Agentic AI Joins the Search for Extraterrestrial Signals",
+      "url": "https://blogs.nvidia.com/blog/ai-joins-the-search-for-extraterrestrial-signals/",
+      "date": "2026-10-30T15:00:10.000Z",
+      "source": "NVIDIA",
+      "summary": "Researchers are deploying autonomous AI agents to scan for extraterrestrial signals, showcasing the expanding role of agentic systems in complex, high-volume scientific signal processing."
+    },
+    {
+      "title": "Making it easier for websites to express AI training preferences",
+      "url": "https://openai.com/index/helping-websites-express-ai-training-preferences",
+      "date": "2026-10-30T09:30:00.000Z",
+      "source": "OpenAI",
+      "summary": "OpenAI will support a shared robots.txt standard, giving website operators a streamlined way to control how providers scrape and train models on their content."
+    },
+    {
+      "title": "Community safety report and new protections for teens",
+      "url": "https://openai.com/index/community-safety-report-and-new-protections-for-teens",
+      "date": "2026-10-30T09:00:00.000Z",
+      "source": "OpenAI",
+      "summary": "OpenAI expanded teen safety safeguards and violence prevention measures in ChatGPT, helping businesses navigate tighter compliance and safety expectations for consumer-facing AI products."
+    },
+    {
+      "title": "Into the Omniverse: How Developers Turn Ideas Into Simulations With Frontier AI Agents",
+      "url": "https://blogs.nvidia.com/blog/developers-simulation-frontier-ai-agents/",
+      "date": "2026-10-29T16:00:35.000Z",
+      "source": "NVIDIA",
+      "summary": "Developers are pairing frontier AI agents with NVIDIA Omniverse to automate 3D simulations, accelerating development workflows for industrial testing and scenario modeling."
+    },
+    {
+      "title": "Granite Switch 4.1.1 — Update models like you update software",
+      "url": "https://huggingface.co/blog/ibm-granite/granite-switch-4-1-1",
+      "date": "2026-10-29T13:37:07.000Z",
+      "source": "Hugging Face",
+      "summary": "Granite Switch 4.1.1 was released to enable software-style model updates, helping engineering teams streamline model maintenance and continuous integration in production."
+    }
+  ]
+}
