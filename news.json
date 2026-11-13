@@ -1,77 +1,77 @@
 {
-  "updated": "2026-11-11T20:13:44.752Z",
+  "updated": "2026-11-13T20:30:01.882Z",
   "items": [
     {
-      "title": "Gilbert + Tobin rethinks the business of law with AI",
-      "url": "https://openai.com/index/gilbert-tobin-sam-nickless",
-      "date": "2026-11-12T00:00:00.000Z",
-      "source": "OpenAI"
-    },
-    {
-      "title": "Meta is losing its longtime head of infrastructure",
-      "url": "https://techcrunch.com/2026/11/11/meta-is-losing-its-longtime-head-of-infrastructure/",
-      "date": "2026-11-11T20:12:01.000Z",
+      "title": "AI agent startup LangChain hits $3B valuation",
+      "url": "https://techcrunch.com/2026/11/13/ai-agent-startup-langchain-hits-3b-valuation/",
+      "date": "2026-11-13T19:37:57.000Z",
       "source": "TechCrunch"
     },
     {
-      "title": "How backlash and red tape continue to slow data centers post-Blue Wave",
-      "url": "https://techcrunch.com/podcast/how-backlash-and-red-tape-continue-to-slow-data-centers-post-blue-wave/",
-      "date": "2026-11-11T20:02:14.000Z",
+      "title": "Export-banned Nvidia chips are behind China’s most powerful AI models — uh oh, Jensen!",
+      "url": "https://techcrunch.com/2026/11/13/export-banned-nvidia-chips-are-behind-chinas-most-powerful-ai-models-uh-oh-jensen/",
+      "date": "2026-11-13T18:40:30.000Z",
       "source": "TechCrunch"
     },
     {
-      "title": "Taiwan’s chipmaking giant TSMC to invest $1B in Anthropic, OpenAI",
-      "url": "https://arstechnica.com/ai/2026/11/taiwans-chipmaking-giant-tsmc-to-invest-1b-in-anthropic-openai/",
-      "date": "2026-11-11T18:16:40.000Z",
-      "source": "Ars Technica"
-    },
-    {
-      "title": "Gemini Decisions API: Fast, calibrated multimodal decisions",
-      "url": "https://blog.google/innovation-and-ai/technology/developers-tools/gemini-decisions-api/",
-      "date": "2026-11-11T18:00:00.000Z",
-      "source": "Google AI"
-    },
-    {
-      "title": "Big Walk used AI to fix a bug. Now the indie gaming world is having a reckoning.",
-      "url": "https://arstechnica.com/gaming/2026/11/big-walk-used-ai-to-fix-a-bug-now-the-indie-gaming-world-is-having-a-reckoning/",
-      "date": "2026-11-11T17:37:32.000Z",
-      "source": "Ars Technica"
-    },
-    {
-      "title": "Google’s Tabletop AI experiment lets you build custom collaboration apps",
-      "url": "https://www.theverge.com/tech/1031526/google-tabletop-ai-experiment-waitlist-availability",
-      "date": "2026-11-11T16:00:00.000Z",
-      "source": "The Verge"
-    },
-    {
-      "title": "Try Tabletop: Customizable, collaborative spaces for groups to plan, play and do more together.",
-      "url": "https://blog.google/innovation-and-ai/models-and-research/google-labs/tabletop/",
-      "date": "2026-11-11T16:00:00.000Z",
-      "source": "Google AI"
-    },
-    {
-      "title": "AlphaGenome 2: Deciphering how cells read DNA to better understand disease",
-      "url": "https://deepmind.google/blog/alphagenome-2-deciphering-how-cells-read-dna-to-better-understand-disease/",
-      "date": "2026-11-11T15:00:15.000Z",
-      "source": "Google DeepMind"
-    },
-    {
-      "title": "BotPsy: On-Device Personal Assistant with a Sub-Billion-Parameter Agentic Language Model",
-      "url": "https://huggingface.co/blog/qvac/botpsy",
-      "date": "2026-11-11T05:01:16.000Z",
+      "title": "Build a Robot Pick-and-Place Simulation with SimReady Assets",
+      "url": "https://huggingface.co/blog/nvidia/simready-assets-robot-pick-and-place",
+      "date": "2026-11-13T18:00:39.000Z",
       "source": "Hugging Face"
     },
     {
-      "title": "How AI Helps Recyclers Turn Mixed Waste Into Reusable Material",
-      "url": "https://blogs.nvidia.com/blog/ai-recycling-startups/",
-      "date": "2026-11-11T03:00:20.000Z",
+      "title": "OpenAI board member worries an AI \"takeover\" of society could be months away",
+      "url": "https://arstechnica.com/features/2026/11/ai-is-the-most-likely-reason-youll-die-openai-board-member-warns/",
+      "date": "2026-11-13T17:25:45.000Z",
+      "source": "Ars Technica"
+    },
+    {
+      "title": "XYBench: Helping with the problem behind the question",
+      "url": "https://huggingface.co/blog/allenai/xybench",
+      "date": "2026-11-13T17:02:35.000Z",
+      "source": "Hugging Face"
+    },
+    {
+      "title": "Introducing ChatGPT Wallet",
+      "url": "https://openai.com/index/introducing-chatgpt-wallet",
+      "date": "2026-11-13T15:00:00.000Z",
+      "source": "OpenAI"
+    },
+    {
+      "title": "What’s really at stake in the Jensen Huang saga",
+      "url": "https://www.theverge.com/podcast/1032866/jensen-huang-nvidia-china-trump-vergecast",
+      "date": "2026-11-13T14:47:16.000Z",
+      "source": "The Verge"
+    },
+    {
+      "title": "Claude’s Duet agent is a little neurotic and surprisingly helpful",
+      "url": "https://www.theverge.com/ai-artificial-intelligence/1032518/claude-duet-ai-agent-hands-on",
+      "date": "2026-11-13T14:00:00.000Z",
+      "source": "The Verge"
+    },
+    {
+      "title": "How AI Is Helping Care Teams Get Patients the Right Care, Sooner",
+      "url": "https://blogs.nvidia.com/blog/how-ai-is-helping-care-teams/",
+      "date": "2026-11-13T13:00:42.000Z",
       "source": "NVIDIA"
     },
     {
-      "title": "The backlash about data centers might really just be about electricity",
-      "url": "https://www.technologyreview.com/2026/11/09/1148194/the-backlash-about-data-centers-might-really-just-be-about-electricity/",
-      "date": "2026-11-09T19:35:33.000Z",
+      "title": "Nvidia privately confirmed it could track chips to fight smuggling, even as industry publicly questioned feasibility",
+      "url": "https://www.technologyreview.com/2026/11/12/1148483/nvidia-chip-tracking/",
+      "date": "2026-11-12T20:16:24.000Z",
       "source": "MIT Technology Review"
+    },
+    {
+      "title": "Introducing Gemini 4 Hydrogen",
+      "url": "https://deepmind.google/blog/introducing-gemini-4-hydrogen/",
+      "date": "2026-11-12T18:00:50.000Z",
+      "source": "Google DeepMind"
+    },
+    {
+      "title": "Google Search gets a major upgrade with Gemini 4 Hydrogen",
+      "url": "https://blog.google/products-and-platforms/products/search/gemini-4-hydrogen-search-upgrade/",
+      "date": "2026-11-12T18:00:00.000Z",
+      "source": "Google AI"
     }
   ]
 }
