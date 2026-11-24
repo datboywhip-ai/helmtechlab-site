@@ -1,89 +1,89 @@
 {
-  "updated": "2026-11-20T21:10:18.741Z",
+  "updated": "2026-11-24T00:56:13.422Z",
   "items": [
     {
-      "title": "A leaky AI supply chain is exposing secret user data at an alarming rate",
-      "url": "https://arstechnica.com/security/2026/11/a-leaky-ai-supply-chain-is-exposing-secret-user-data-at-an-alarming-rate/",
-      "date": "2026-11-20T20:59:08.000Z",
+      "title": "Trump engineered a risky comeback for Jensen Huang",
+      "url": "https://www.theverge.com/ai-artificial-intelligence/1040652/jensen-huang-nvidia-trump-reinstated",
+      "date": "2026-11-23T22:25:12.000Z",
+      "source": "The Verge",
+      "summary": "President Trump helped facilitate Jensen Huang's return after Huang initially resigned as Nvidia's CEO amid controversial personal affair allegations."
+    },
+    {
+      "title": "Nvidia CEO Jensen Huang is back. What happens next?",
+      "url": "https://www.theverge.com/ai-artificial-intelligence/1030422/nvidia-jensen-huang-ai-china-alice-huang",
+      "date": "2026-11-23T22:10:32.000Z",
+      "source": "The Verge",
+      "summary": "Jensen Huang returned to Nvidia following board investigations into multiple personal affairs, leaving observers to consider the chipmaker's next corporate steps."
+    },
+    {
+      "title": "Anthropic launches Claude Ship, letting AI agents review, fix, and approve code changes",
+      "url": "https://techcrunch.com/2026/11/23/anthropic-launches-claude-ship-letting-ai-agents-review-fix-and-approve-code-changes/",
+      "date": "2026-11-23T22:05:50.000Z",
+      "source": "TechCrunch",
+      "summary": "Anthropic launched Claude Ship to automate code reviews and approvals, helping engineering teams resolve development bottlenecks caused by high volumes of AI-generated code."
+    },
+    {
+      "title": "Supertake raises $20M to let AI agents turn your market predictions into stock portfolios",
+      "url": "https://techcrunch.com/2026/11/23/supertake-raises-20m-to-let-ai-agents-turn-your-market-predictions-into-stock-portfolios/",
+      "date": "2026-11-23T22:02:05.000Z",
+      "source": "TechCrunch",
+      "summary": "Supertake raised twenty million dollars to develop an AI platform that converts market predictions directly into investment portfolios without manual stock selection."
+    },
+    {
+      "title": "States sue SpaceX to stop Grok from generating child sex images, revenge porn",
+      "url": "https://arstechnica.com/tech-policy/2026/11/states-sue-spacex-to-stop-grok-from-generating-child-sex-images-revenge-porn/",
+      "date": "2026-11-23T21:30:44.000Z",
       "source": "Ars Technica",
-      "summary": "Tests show AI supply chains frequently leak sensitive user prompt data, highlighting growing cybersecurity and privacy risks for businesses deploying third-party AI systems."
+      "summary": "Multiple states filed a lawsuit against SpaceX over allegations that its Grok model generates illicit imagery despite existing screening measures."
     },
     {
-      "title": "Daniel Ek backs AI researcher’s fusion power startup. Here’s what they’re building.",
-      "url": "https://techcrunch.com/2026/11/20/daniel-ek-backs-ai-researchers-fusion-power-startup-heres-what-theyre-building/",
-      "date": "2026-11-20T19:53:41.000Z",
-      "source": "TechCrunch",
-      "summary": "Spotify founder Daniel Ek is investing in Europa Fusion, an AI researcher's energy startup working to develop commercial fusion power."
+      "title": "OpenAI and Cisco introduce Shirudo",
+      "url": "https://openai.com/index/introducing-shirudo",
+      "date": "2026-11-23T21:20:00.000Z",
+      "source": "OpenAI",
+      "summary": "OpenAI and Cisco launched an open-source Linux runtime called Shirudo to help organizations safeguard active systems while applying software updates."
     },
     {
-      "title": "AI claimed a solution to the 167-year-old Riemann Hypothesis — and a human did, too",
-      "url": "https://techcrunch.com/2026/11/20/ai-claimed-a-solution-to-the-167-year-old-riemann-hypothesis-and-a-human-did-too/",
-      "date": "2026-11-20T19:32:08.000Z",
-      "source": "TechCrunch",
-      "summary": "Researchers have proposed an AI-assisted solution to the historic Riemann Hypothesis, demonstrating how machine learning is entering advanced theoretical mathematics."
-    },
-    {
-      "title": "Trump threatens ‘tremendous tax’ for moving AI data centers outside the US",
-      "url": "https://www.theverge.com/policy/1038892/trump-foreign-data-centers-tax",
-      "date": "2026-11-20T18:50:19.000Z",
-      "source": "The Verge",
-      "summary": "Donald Trump threatened steep taxes on companies building AI data centers abroad, adding potential regulatory and cost risks for firms scaling infrastructure."
-    },
-    {
-      "title": "The most misunderstood graph in AI just got a major update",
-      "url": "https://www.technologyreview.com/2026/11/20/1149399/the-most-misunderstood-graph-in-ai-just-got-a-major-update/",
-      "date": "2026-11-20T18:15:15.000Z",
+      "title": "A legendary philosopher isn’t buying Anthropic’s consciousness argument",
+      "url": "https://www.technologyreview.com/2026/11/23/1149569/a-legendary-philosopher-isnt-buying-anthropics-consciousness-argument/",
+      "date": "2026-11-23T17:36:08.000Z",
       "source": "MIT Technology Review",
-      "summary": "A new evaluation report shows AI continues exponential progress in coding tasks, though models still struggle with work requiring complex human judgment."
+      "summary": "A prominent philosopher questioned Anthropic's investor disclosure regarding potential AI consciousness, adding critical perspective to debates surrounding artificial sentience."
     },
     {
-      "title": "Anthropic mathematician claims to have solved prestigious Millennium Prize problem with Claude",
-      "url": "https://www.theverge.com/ai-artificial-intelligence/1010051/anthropic-riemann-hypothesis-millennium-prize-problem",
-      "date": "2026-11-20T16:34:13.000Z",
-      "source": "The Verge",
-      "summary": "An Anthropic mathematician claims to have used Claude to help solve the famous Riemann hypothesis, signaling major potential for AI-assisted scientific breakthroughs."
-    },
-    {
-      "title": "Combatting adversarial distillation",
-      "url": "https://openai.com/index/combatting-adversarial-distillation",
-      "date": "2026-11-20T10:00:00.000Z",
-      "source": "OpenAI",
-      "summary": "OpenAI introduced a multi-layered security strategy to stop third parties from extracting proprietary model capabilities through adversarial distillation."
-    },
-    {
-      "title": "Welcome Inkling 2 Mini, Cutting-edge Performance for your Local Setup",
-      "url": "https://huggingface.co/blog/inkling2mini",
-      "date": "2026-11-20T00:00:00.000Z",
+      "title": "RoboTrack: Point tracking for real-world robotic manipulation",
+      "url": "https://huggingface.co/blog/allenai/robotrack",
+      "date": "2026-11-23T17:20:37.000Z",
       "source": "Hugging Face",
-      "summary": "Hugging Face launched Inkling 2 Mini, a compact model built to provide high-performance AI capabilities directly on local hardware setups."
+      "summary": "Hugging Face introduced RoboTrack, a framework designed to improve point tracking for physical robotic manipulation tasks."
     },
     {
-      "title": "Hebbia sees improvements in financial research with GPT-6 Astra",
-      "url": "https://openai.com/business/customer-stories/hebbia",
-      "date": "2026-11-20T00:00:00.000Z",
-      "source": "OpenAI",
-      "summary": "Financial research firm Hebbia tested GPT-6 Astra, reporting improved source coverage, better citations, and higher presentation quality for enterprise workflows."
-    },
-    {
-      "title": "NVIDIA and Microsoft Expand Accelerated Computing From Azure to Windows PCs",
-      "url": "https://blogs.nvidia.com/blog/microsoft-ignite-accelerated-computing-azure-windows-pcs/",
-      "date": "2026-11-19T20:00:15.000Z",
+      "title": "Merry Making: Play, Build and Create With NVIDIA Technologies This Holiday Season",
+      "url": "https://blogs.nvidia.com/blog/nvidia-technologies-holidays-2026/",
+      "date": "2026-11-23T17:00:08.000Z",
       "source": "NVIDIA",
-      "summary": "NVIDIA and Microsoft expanded their computing partnership across Azure and Windows PCs, making it easier for businesses to build and deploy intelligent applications."
+      "summary": "Nvidia launched a seasonal campaign highlighting how its technology tools can support builders, creators, and gamers pursuing creative technical projects."
     },
     {
-      "title": "Introducing Tool Retrieval in the Gemini API",
-      "url": "https://blog.google/innovation-and-ai/technology/developers-tools/gemini-api-tool-retrieval/",
-      "date": "2026-11-19T18:00:00.000Z",
+      "title": "A more tailored Google Search that’s uniquely yours",
+      "url": "https://blog.google/products-and-platforms/products/search/google-search-personal-intelligence-apps/",
+      "date": "2026-11-23T17:00:00.000Z",
       "source": "Google AI",
-      "summary": "Google previewed Tool Retrieval for the Gemini API, allowing developers to connect AI agents to hundreds of tools while reducing token consumption."
+      "summary": "Google introduced an opt-in search feature allowing users to connect personal apps like Drive and Wallet to personalize AI-driven responses."
     },
     {
-      "title": "Introducing Gemini 4 Neon",
-      "url": "https://deepmind.google/blog/introducing-gemini-4-neon/",
-      "date": "2026-11-18T21:35:43.000Z",
+      "title": "Finding faster quantum algorithms with agents and formal verification",
+      "url": "https://deepmind.google/blog/finding-faster-quantum-algorithms-with-agents-and-formal-verification/",
+      "date": "2026-11-23T16:59:40.000Z",
       "source": "Google DeepMind",
-      "summary": "Google DeepMind announced Gemini 4 Neon, expanding its family of AI models for developers and enterprise builders."
+      "summary": "Google DeepMind combined autonomous agents with formal verification methods to accelerate quantum algorithms designed for complex fusion and chemistry research."
+    },
+    {
+      "title": "Jensen Huang reinstated as Nvidia CEO, board chair",
+      "url": "https://arstechnica.com/ai/2026/11/jensen-huang-reinstated-as-nvidia-ceo-board-chair/",
+      "date": "2026-11-23T15:46:18.000Z",
+      "source": "Ars Technica",
+      "summary": "Jensen Huang was reinstated as Nvidia's CEO and board chair following public backing and outreach from Donald Trump."
     }
   ]
 }
