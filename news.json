@@ -1,89 +1,77 @@
 {
-  "updated": "2026-11-24T00:56:13.422Z",
+  "updated": "2026-11-25T22:35:27.097Z",
   "items": [
     {
-      "title": "Trump engineered a risky comeback for Jensen Huang",
-      "url": "https://www.theverge.com/ai-artificial-intelligence/1040652/jensen-huang-nvidia-trump-reinstated",
-      "date": "2026-11-23T22:25:12.000Z",
-      "source": "The Verge",
-      "summary": "President Trump helped facilitate Jensen Huang's return after Huang initially resigned as Nvidia's CEO amid controversial personal affair allegations."
+      "title": "Google’s patent for custom AI video feeds paints a bleak picture of entertainment’s future",
+      "url": "https://www.theverge.com/entertainment/1042221/google-my-channel-ai-video-patent",
+      "date": "2026-11-25T21:51:26.000Z",
+      "source": "The Verge"
     },
     {
-      "title": "Nvidia CEO Jensen Huang is back. What happens next?",
-      "url": "https://www.theverge.com/ai-artificial-intelligence/1030422/nvidia-jensen-huang-ai-china-alice-huang",
-      "date": "2026-11-23T22:10:32.000Z",
-      "source": "The Verge",
-      "summary": "Jensen Huang returned to Nvidia following board investigations into multiple personal affairs, leaving observers to consider the chipmaker's next corporate steps."
+      "title": "OpenAI says heavy ChatGPT users may hit limits sooner as it merges Chat and Work",
+      "url": "https://techcrunch.com/2026/11/25/openai-says-heavy-chatgpt-users-may-hit-limits-sooner-as-it-merges-chat-and-work/",
+      "date": "2026-11-25T20:03:27.000Z",
+      "source": "TechCrunch"
     },
     {
-      "title": "Anthropic launches Claude Ship, letting AI agents review, fix, and approve code changes",
-      "url": "https://techcrunch.com/2026/11/23/anthropic-launches-claude-ship-letting-ai-agents-review-fix-and-approve-code-changes/",
-      "date": "2026-11-23T22:05:50.000Z",
-      "source": "TechCrunch",
-      "summary": "Anthropic launched Claude Ship to automate code reviews and approvals, helping engineering teams resolve development bottlenecks caused by high volumes of AI-generated code."
+      "title": "Jensen Huang broke Nvidia’s code of conduct, and his employees may not forget it",
+      "url": "https://techcrunch.com/2026/11/25/jensen-huang-broke-nvidias-code-of-conduct-and-his-employees-may-not-forget-it/",
+      "date": "2026-11-25T19:54:57.000Z",
+      "source": "TechCrunch"
     },
     {
-      "title": "Supertake raises $20M to let AI agents turn your market predictions into stock portfolios",
-      "url": "https://techcrunch.com/2026/11/23/supertake-raises-20m-to-let-ai-agents-turn-your-market-predictions-into-stock-portfolios/",
-      "date": "2026-11-23T22:02:05.000Z",
-      "source": "TechCrunch",
-      "summary": "Supertake raised twenty million dollars to develop an AI platform that converts market predictions directly into investment portfolios without manual stock selection."
+      "title": "Where scientists draw the line on AI agents",
+      "url": "https://huggingface.co/blog/allenai/where-scientists-draw-the-line-on-ai-agents",
+      "date": "2026-11-25T18:52:55.000Z",
+      "source": "Hugging Face"
     },
     {
-      "title": "States sue SpaceX to stop Grok from generating child sex images, revenge porn",
-      "url": "https://arstechnica.com/tech-policy/2026/11/states-sue-spacex-to-stop-grok-from-generating-child-sex-images-revenge-porn/",
-      "date": "2026-11-23T21:30:44.000Z",
-      "source": "Ars Technica",
-      "summary": "Multiple states filed a lawsuit against SpaceX over allegations that its Grok model generates illicit imagery despite existing screening measures."
+      "title": "FCC signs off on SpaceX’s plan to put up to 1 million data center satellites into space",
+      "url": "https://www.theverge.com/science/1042278/spacex-fcc-starmind-ai-space-data-centers",
+      "date": "2026-11-25T17:44:51.000Z",
+      "source": "The Verge"
     },
     {
-      "title": "OpenAI and Cisco introduce Shirudo",
-      "url": "https://openai.com/index/introducing-shirudo",
-      "date": "2026-11-23T21:20:00.000Z",
-      "source": "OpenAI",
-      "summary": "OpenAI and Cisco launched an open-source Linux runtime called Shirudo to help organizations safeguard active systems while applying software updates."
+      "title": "Ars Live recap: Don’t expect military attacks on data centers to stop",
+      "url": "https://arstechnica.com/gadgets/2026/11/ars-live-recap-dont-expect-military-attacks-on-data-centers-to-stop/",
+      "date": "2026-11-25T16:47:14.000Z",
+      "source": "Ars Technica"
     },
     {
-      "title": "A legendary philosopher isn’t buying Anthropic’s consciousness argument",
-      "url": "https://www.technologyreview.com/2026/11/23/1149569/a-legendary-philosopher-isnt-buying-anthropics-consciousness-argument/",
-      "date": "2026-11-23T17:36:08.000Z",
-      "source": "MIT Technology Review",
-      "summary": "A prominent philosopher questioned Anthropic's investor disclosure regarding potential AI consciousness, adding critical perspective to debates surrounding artificial sentience."
+      "title": "AI may soon change what it means to be a theoretical physicist",
+      "url": "https://arstechnica.com/ai/2026/11/ai-can-do-the-calculations-physicists-are-figuring-out-what-comes-next/",
+      "date": "2026-11-25T12:00:28.000Z",
+      "source": "Ars Technica"
     },
     {
-      "title": "RoboTrack: Point tracking for real-world robotic manipulation",
-      "url": "https://huggingface.co/blog/allenai/robotrack",
-      "date": "2026-11-23T17:20:37.000Z",
-      "source": "Hugging Face",
-      "summary": "Hugging Face introduced RoboTrack, a framework designed to improve point tracking for physical robotic manipulation tasks."
+      "title": "AI is straining America’s open records systems",
+      "url": "https://www.technologyreview.com/2026/11/25/1149702/ai-is-straining-americas-open-records-systems/",
+      "date": "2026-11-25T10:00:00.000Z",
+      "source": "MIT Technology Review"
+    },
+    {
+      "title": "How Gemini is changing the game for Golden State's organization and fans.",
+      "url": "https://blog.google/products-and-platforms/products/gemini/gemini-golden-state/",
+      "date": "2026-11-24T16:00:00.000Z",
+      "source": "Google AI"
+    },
+    {
+      "title": "From spectrum to structure: Identifying molecules with Mass Spec Skills for Google Antigravity",
+      "url": "https://deepmind.google/blog/interpreting-mass-spectra-with-google-antigravity/",
+      "date": "2026-11-24T13:07:53.000Z",
+      "source": "Google DeepMind"
+    },
+    {
+      "title": "GPT-6 models demonstrate intrinsic protein-design capabilities",
+      "url": "https://openai.com/index/gpt-6-models-demonstrate-intrinsic-protein-design-capabilities",
+      "date": "2026-11-24T13:00:00.000Z",
+      "source": "OpenAI"
     },
     {
       "title": "Merry Making: Play, Build and Create With NVIDIA Technologies This Holiday Season",
       "url": "https://blogs.nvidia.com/blog/nvidia-technologies-holidays-2026/",
       "date": "2026-11-23T17:00:08.000Z",
-      "source": "NVIDIA",
-      "summary": "Nvidia launched a seasonal campaign highlighting how its technology tools can support builders, creators, and gamers pursuing creative technical projects."
-    },
-    {
-      "title": "A more tailored Google Search that’s uniquely yours",
-      "url": "https://blog.google/products-and-platforms/products/search/google-search-personal-intelligence-apps/",
-      "date": "2026-11-23T17:00:00.000Z",
-      "source": "Google AI",
-      "summary": "Google introduced an opt-in search feature allowing users to connect personal apps like Drive and Wallet to personalize AI-driven responses."
-    },
-    {
-      "title": "Finding faster quantum algorithms with agents and formal verification",
-      "url": "https://deepmind.google/blog/finding-faster-quantum-algorithms-with-agents-and-formal-verification/",
-      "date": "2026-11-23T16:59:40.000Z",
-      "source": "Google DeepMind",
-      "summary": "Google DeepMind combined autonomous agents with formal verification methods to accelerate quantum algorithms designed for complex fusion and chemistry research."
-    },
-    {
-      "title": "Jensen Huang reinstated as Nvidia CEO, board chair",
-      "url": "https://arstechnica.com/ai/2026/11/jensen-huang-reinstated-as-nvidia-ceo-board-chair/",
-      "date": "2026-11-23T15:46:18.000Z",
-      "source": "Ars Technica",
-      "summary": "Jensen Huang was reinstated as Nvidia's CEO and board chair following public backing and outreach from Donald Trump."
+      "source": "NVIDIA"
     }
   ]
 }
