@@ -1,77 +1,89 @@
 {
-  "updated": "2026-11-25T22:35:27.097Z",
+  "updated": "2026-11-27T21:59:45.890Z",
   "items": [
     {
-      "title": "Google’s patent for custom AI video feeds paints a bleak picture of entertainment’s future",
-      "url": "https://www.theverge.com/entertainment/1042221/google-my-channel-ai-video-patent",
-      "date": "2026-11-25T21:51:26.000Z",
-      "source": "The Verge"
+      "title": "Android’s DIY widgets are a bit of vibe-coding fun",
+      "url": "https://www.theverge.com/tech/1041801/android-intelligence-create-my-widget-gemini",
+      "date": "2026-11-27T14:00:00.000Z",
+      "source": "The Verge",
+      "summary": "Android users can now build personalized widgets using conversational AI tools, making rapid mobile micro-app development accessible to non-technical users."
     },
     {
-      "title": "OpenAI says heavy ChatGPT users may hit limits sooner as it merges Chat and Work",
-      "url": "https://techcrunch.com/2026/11/25/openai-says-heavy-chatgpt-users-may-hit-limits-sooner-as-it-merges-chat-and-work/",
-      "date": "2026-11-25T20:03:27.000Z",
-      "source": "TechCrunch"
+      "title": "Taking Trainium3 to the Track: Generating Videos with LTX-2.5",
+      "url": "https://huggingface.co/blog/video-trainium3",
+      "date": "2026-11-27T00:00:00.000Z",
+      "source": "Hugging Face",
+      "summary": "Hugging Face demonstrated video generation using the LTX-2.5 model on Trainium3 chips, expanding hardware alternatives for compute-heavy generative media workflows."
     },
     {
-      "title": "Jensen Huang broke Nvidia’s code of conduct, and his employees may not forget it",
-      "url": "https://techcrunch.com/2026/11/25/jensen-huang-broke-nvidias-code-of-conduct-and-his-employees-may-not-forget-it/",
-      "date": "2026-11-25T19:54:57.000Z",
-      "source": "TechCrunch"
+      "title": "Nvidia hits pause on chip shipments to Southeast Asia",
+      "url": "https://techcrunch.com/2026/11/26/nvidia-hits-pause-on-chip-shipments-to-southeast-asia/",
+      "date": "2026-11-26T20:03:54.000Z",
+      "source": "TechCrunch",
+      "summary": "Nvidia halted server shipments to several Southeast Asian countries following tighter U.S. export controls, potentially disrupting regional AI infrastructure expansion."
     },
     {
-      "title": "Where scientists draw the line on AI agents",
-      "url": "https://huggingface.co/blog/allenai/where-scientists-draw-the-line-on-ai-agents",
-      "date": "2026-11-25T18:52:55.000Z",
-      "source": "Hugging Face"
+      "title": "Grand Theft Auto VI proves why efficiency isn’t a virtue",
+      "url": "https://techcrunch.com/2026/11/26/as-anthropic-ipos-grand-theft-auto-vi-proves-why-efficiency-isnt-a-virtue/",
+      "date": "2026-11-26T16:00:00.000Z",
+      "source": "TechCrunch",
+      "summary": "The massive commercial success of Grand Theft Auto VI highlights the enduring market value of heavily human-crafted products alongside the rise of enterprise AI."
     },
     {
-      "title": "FCC signs off on SpaceX’s plan to put up to 1 million data center satellites into space",
-      "url": "https://www.theverge.com/science/1042278/spacex-fcc-starmind-ai-space-data-centers",
-      "date": "2026-11-25T17:44:51.000Z",
-      "source": "The Verge"
+      "title": "Come for the Games, Stay for the Community With GeForce NOW",
+      "url": "https://blogs.nvidia.com/blog/geforce-now-thursday-community-war-thunder-reward/",
+      "date": "2026-11-26T14:00:22.000Z",
+      "source": "NVIDIA",
+      "summary": "Nvidia is spotlighting community engagement across its GeForce NOW cloud gaming platform, showing how streaming infrastructure supports broader digital social ecosystems."
+    },
+    {
+      "title": "Introducing the llama.cpp benchmark dashboard for AMD Ryzen and Radeon",
+      "url": "https://huggingface.co/blog/ggml-org/llamacpp-amd-bench",
+      "date": "2026-11-26T11:37:17.000Z",
+      "source": "Hugging Face",
+      "summary": "Hugging Face launched a benchmark dashboard for running llama.cpp on AMD Ryzen and Radeon chips, helping builders evaluate local AI inference on AMD hardware."
+    },
+    {
+      "title": "42 state AGs are trying to stop Character.AI from selling users’ chats",
+      "url": "https://www.theverge.com/policy/1042620/character-ai-sale-state-ags-block-selling-users-chats",
+      "date": "2026-11-26T09:54:40.000Z",
+      "source": "The Verge",
+      "summary": "Forty-two state attorneys general are moving to block Character.AI from selling private user chat logs during bankruptcy proceedings, signaling heightened regulatory scrutiny of AI data privacy."
     },
     {
       "title": "Ars Live recap: Don’t expect military attacks on data centers to stop",
       "url": "https://arstechnica.com/gadgets/2026/11/ars-live-recap-dont-expect-military-attacks-on-data-centers-to-stop/",
       "date": "2026-11-25T16:47:14.000Z",
-      "source": "Ars Technica"
-    },
-    {
-      "title": "AI may soon change what it means to be a theoretical physicist",
-      "url": "https://arstechnica.com/ai/2026/11/ai-can-do-the-calculations-physicists-are-figuring-out-what-comes-next/",
-      "date": "2026-11-25T12:00:28.000Z",
-      "source": "Ars Technica"
+      "source": "Ars Technica",
+      "summary": "Military forces increasingly view cloud infrastructure and data centers as strategic wartime targets, raising physical resilience and redundancy concerns for digital businesses."
     },
     {
       "title": "AI is straining America’s open records systems",
       "url": "https://www.technologyreview.com/2026/11/25/1149702/ai-is-straining-americas-open-records-systems/",
       "date": "2026-11-25T10:00:00.000Z",
-      "source": "MIT Technology Review"
+      "source": "MIT Technology Review",
+      "summary": "Automated public records requests powered by AI are overwhelming local government administrators, exposing operational bottlenecks in civic data transparency systems."
     },
     {
       "title": "How Gemini is changing the game for Golden State's organization and fans.",
       "url": "https://blog.google/products-and-platforms/products/gemini/gemini-golden-state/",
       "date": "2026-11-24T16:00:00.000Z",
-      "source": "Google AI"
+      "source": "Google AI",
+      "summary": "The Golden State sports organization partnered with Google Gemini to enhance fan experiences and enterprise operations, illustrating AI integration into live entertainment venues."
     },
     {
       "title": "From spectrum to structure: Identifying molecules with Mass Spec Skills for Google Antigravity",
       "url": "https://deepmind.google/blog/interpreting-mass-spectra-with-google-antigravity/",
       "date": "2026-11-24T13:07:53.000Z",
-      "source": "Google DeepMind"
+      "source": "Google DeepMind",
+      "summary": "Google DeepMind released Mass Spec Skills on Google Antigravity to interpret tandem mass spectra, accelerating molecular identification for scientific and pharmaceutical research."
     },
     {
       "title": "GPT-6 models demonstrate intrinsic protein-design capabilities",
       "url": "https://openai.com/index/gpt-6-models-demonstrate-intrinsic-protein-design-capabilities",
       "date": "2026-11-24T13:00:00.000Z",
-      "source": "OpenAI"
-    },
-    {
-      "title": "Merry Making: Play, Build and Create With NVIDIA Technologies This Holiday Season",
-      "url": "https://blogs.nvidia.com/blog/nvidia-technologies-holidays-2026/",
-      "date": "2026-11-23T17:00:08.000Z",
-      "source": "NVIDIA"
+      "source": "OpenAI",
+      "summary": "OpenAI demonstrated that GPT-6 models can design functional protein structures and sequences, marking a significant step toward using general AI for biological engineering."
     }
   ]
 }
